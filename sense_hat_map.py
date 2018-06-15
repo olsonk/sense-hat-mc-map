@@ -45,14 +45,8 @@ while True:
         if event.direction == "middle" and event.action == "pressed":
             mc.postToChat("Searching for diamonds...")
             for row in range(-1, 2):
-                if diamond_found:
-                    break
                 for col in range(-1, 2):
-                    if diamond_found:
-                        break
                     for block in range(30):
-                        if diamond_found:
-                            break
                         if mc.getBlock(x+col, -65+block, z+row) == 56:
                             diamond_found = True
                             sense.set_pixel(col+4, row+4, (220, 220, 255))
